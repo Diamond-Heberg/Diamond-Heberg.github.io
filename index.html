@@ -35,7 +35,66 @@
 
 <!-- https://themewagon.github.io/ecohosting/ -->
 <div class="drawer">
-  <div class="drawer-content Poppins">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col">
+    <!-- Navbar -->
+
+    <nav class="navbar fixed top-0 z-20 bg-base-200">
+      <div class="navbar-start">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </label>
+        </div>
+        
+        <a class="btn p-1 ml-2 text-2xl font-extrabold">
+        <svg class="w-10" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136">
+            <path d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42" stroke="currentColor" stroke-width="8"/>
+            <path d="M138 23H56m-16 0h-1" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+            <path d="m89 132 34-90" stroke="currentColor" stroke-width="8"/>
+        </svg>
+            Diamond Heberg
+        </a>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+
+        <ul class="menu menu-horizontal px-1 mr-4">
+          <li><a class="text-info hover:text-primary">🏠 Acceuil</a></li>
+
+          <li class="dropdown dropdown-hover">
+            <label tabindex="0">🛒 Nos Offres Jeux</label>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Minecraft</a></li>
+              <li><a>FiveM</a></li>
+              <li><a>Garry's Mod</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown dropdown-hover">
+            <label tabindex="0">🌐 Nos Offres Web</label>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Hébergement Web</a></li>
+              <li><a>VPS</a></li>
+              <li><a>Revendeur Web</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown dropdown-hover">
+            <label tabindex="0">🚨 Support</label>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>🎫 Ouvrir un Ticket</a></li>
+              <li><a>📞 Support Discord</a></li>
+              <li><a>📧 Contactez-Nous</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a class="transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br">Espace Client</a>
+
+      </div>
+    </nav>
 
     <div class="m-4 chat chat-end fixed bottom-0 right-0 z-20">
       <div class="chat-image avatar">
@@ -46,212 +105,165 @@
       <div class="chat-bubble chat-bubble-primary"><strong>Rappel : </strong>Ce site est toujours en BETA !</div>
     </div>
 
-<div class="navbar fixed top-0 z-20 bg-base-200">
-  <div class="navbar-start">
-    <input id="supertab" type="checkbox" class="drawer-toggle" />
-    <label for="supertab" aria-label="open sidebar" class="btn btn-square btn-ghost md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-    </label>
-    
-    <a class="btn p-1 ml-2 text-2xl font-extrabold">
-    <svg class="w-10" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136">
-        <path d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42" stroke="currentColor" stroke-width="8"/>
-        <path d="M138 23H56m-16 0h-1" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-        <path d="m89 132 34-90" stroke="currentColor" stroke-width="8"/>
-    </svg>
-        Diamond Heberg
-    </a>
+    <div class="hero bg-base-100" style="min-height: 80vh;">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="img/server.svg" class="max-w-sm pt-8 md:pt-0" />
+            <div>
+                <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">L'hébergeur brillant comme le diamant</h1>
+                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <a class="btn btn-primary">Découvrez nos offres</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center py-4 container mx-auto"  style="min-height: 75vh;">
+
+      <div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
+        <div class="card-body items-center text-center">
+          <img src="img/icon/web.png" class="w-20 h-20">
+          <h2 class="card-title">Site Lite</h2>
+          <div class="badge badge-primary">Offre la moin chère</div>
+          <p>We are using cookies for no reason.</p>
+          <div class="card-actions justify-end">
+            <a class="btn btn-ghost">Deny</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-96 bg-neutral text-neutral-content lg:h-5/6">
+        <div class="card-body items-center text-center">
+          <img src="img/icon/iron.png" class="w-20 h-20 rounded">
+          <h2 class="card-title text-2xl">Iron</h2>
+          <div class="badge badge-warning">Offre recomandé</div>
+          <p class="py-2 text-lg">
+            <i class="fa-solid fa-microchip"></i> 200% CPU <br>
+            <i class="fa-solid fa-memory"></i> 4Go Ram <br>
+            <i class="fa-solid fa-floppy-disk"></i> 15Go <br>
+            <i class="fa-solid fa-database"></i> 2 Base de données <br>
+            <i class="fa-solid fa-cloud-arrow-down"></i> 1 Backup
+          </p>
+          <div class="card-actions justify-end">
+            <a class="btn btn-primary">Accept</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
+        <div class="card-body items-center text-center">
+          <img src="img/icon/js.png" class="w-20 h-20">
+          <h2 class="card-title">Cookies!</h2>
+          <div class="badge badge-primary">Offre Sympa</div>
+          <p>Je sais pas quoi mettre là.</p>
+          <div class="card-actions justify-end">
+            <a class="btn btn-ghost">Accept</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pt-20 bg-neutral">
+      <h1 class="text-center font-bold text-4xl">Notre Equipe</h1>
+      <h1 class="py-5 text-center font-bold text-4xl">Payements Supportés</h1>
+    </div>
+
+    <div class="bg-neutral grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 place-items-center py-8 gap-y-8">
+      <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+        src="img/paypal.png"
+        alt="Logo Paypal">
+      <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+        src="img/visa.webp"
+        alt="Logo Visa">
+      <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+        src="img/mastercard.png"
+        alt="Logo MasterCard">
+      <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+        src="img/paysafecardpng.png"
+        alt="Logo Paysafecard">
+      <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+        src="img/dedipass.png"
+        alt="Logo Dedipass">
+    </div>
+
+    <div class="p-10 bg-base-100 text-center align-items-center">
+      <h1 class="pt-2 font-bold text-4xl">Mais achetez nous un serveur</h1>
+      <p class="pt-4">On a besoin d'argent ptn</p>
+      <a
+        class="mt-8 transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br">
+        Je suis swag
+      </a>
+    </div>
+
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <aside>
+        <svg class="w-20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136">
+          <path
+            d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
+            stroke="currentColor" stroke-width="8" />
+          <path d="M138 23H56m-16 0h-1" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+          <path d="m89 132 34-90" stroke="currentColor" stroke-width="8" />
+        </svg>
+        <!-- p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p-->
+      </aside>
+      <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+  
   </div>
-  <div class="navbar-end hidden lg:flex">
-
-    <ul class="menu menu-horizontal px-1 mr-4">
-      <li><a class="text-info hover:text-primary">🏠 Acceuil</a></li>
-
-      <li class="dropdown dropdown-hover">
-        <label tabindex="0">🛒 Nos Offres Jeux</label>
-        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+  <div class="drawer-side">
+    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-80 min-h-full bg-base-200 dropdown-content">
+      <!-- Sidebar content here -->
+      <li><a class="text-info hover:text-primary mt-14">🏠 Acceuil</a></li>
+      
+      <li>
+        <a>🛒 Nos Offres Jeux</a>
+        <ul class="p-2">
           <li><a>Minecraft</a></li>
           <li><a>FiveM</a></li>
           <li><a>Garry's Mod</a></li>
         </ul>
       </li>
-
-      <li class="dropdown dropdown-hover">
-        <label tabindex="0">🌐 Nos Offres Web</label>
-        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+      
+      <li>
+        <a>🌐 Nos Offres Web</a>
+        <ul class="p-2">
           <li><a>Hébergement Web</a></li>
           <li><a>VPS</a></li>
           <li><a>Revendeur Web</a></li>
         </ul>
       </li>
       
-      <li class="dropdown dropdown-hover">
-        <label tabindex="0">🚨 Support</label>
-        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+      <li>
+        <a>🚨 Support</a>
+        <ul class="p-2">
           <li><a>🎫 Ouvrir un Ticket</a></li>
           <li><a>📞 Support Discord</a></li>
           <li><a>📧 Contactez-Nous</a></li>
         </ul>
       </li>
+
     </ul>
-
-    <a class="transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br">Espace Client</a>
-
   </div>
-</div>
-
-<div class="hero bg-base-100" style="min-height: 80vh;">
-    <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="img/server.svg" class="max-w-sm pt-8 md:pt-0" />
-        <div>
-            <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">L'hébergeur brillant comme le diamant</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <a class="btn btn-primary">Découvrez nos offres</a>
-        </div>
-    </div>
-</div>
-
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center py-4 container mx-auto"  style="min-height: 75vh;">
-<div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
-  <div class="card-body items-center text-center">
-    <img src="img/icon/web.png" class="w-20 h-20">
-    <h2 class="card-title">Site Lite</h2>
-    <div class="badge badge-primary">Offre la moin chère</div>
-    <p>We are using cookies for no reason.</p>
-    <div class="card-actions justify-end">
-      <a class="btn btn-ghost">Deny</a>
-    </div>
-  </div>
-</div>
-
-<div class="card w-96 bg-neutral text-neutral-content lg:h-5/6">
-  <div class="card-body items-center text-center">
-    <img src="img/icon/iron.png" class="w-20 h-20 rounded">
-    <h2 class="card-title text-2xl">Iron</h2>
-    <div class="badge badge-warning">Offre recomandé</div>
-    <p class="py-2 text-lg">
-      <i class="fa-solid fa-microchip"></i> 200% CPU <br>
-      <i class="fa-solid fa-memory"></i> 4Go Ram <br>
-      <i class="fa-solid fa-floppy-disk"></i> 15Go <br>
-      <i class="fa-solid fa-database"></i> 2 Base de données <br>
-      <i class="fa-solid fa-cloud-arrow-down"></i> 1 Backup
-    </p>
-    <div class="card-actions justify-end">
-      <a class="btn btn-primary">Accept</a>
-    </div>
-  </div>
-</div>
-
-<div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
-  <div class="card-body items-center text-center">
-    <img src="img/icon/js.png" class="w-20 h-20">
-    <h2 class="card-title">Cookies!</h2>
-    <div class="badge badge-primary">Offre Sympa</div>
-    <p>Je sais pas quoi mettre là.</p>
-    <div class="card-actions justify-end">
-      <a class="btn btn-ghost">Accept</a>
-    </div>
-  </div>
-</div>
-</div>
-<div class="pt-20 bg-neutral">
-  <h1 class="text-center font-bold text-4xl">Notre Equipe</h1>
-  <h1 class="py-5 text-center font-bold text-4xl">Payements Supportés</h1>
-</div>
-<div class="bg-neutral grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 place-items-center py-8 gap-y-8">
-  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-    src="img/paypal.png"
-    alt="Logo Paypal">
-  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-    src="img/visa.webp"
-    alt="Logo Visa">
-  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-    src="img/mastercard.png"
-    alt="Logo MasterCard">
-  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-    src="img/paysafecardpng.png"
-    alt="Logo Paysafecard">
-  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-    src="img/dedipass.png"
-    alt="Logo Dedipass">
-
-</div>
-<div class="p-10 bg-base-100 text-center align-items-center">
-  <h1 class="pt-2 font-bold text-4xl">Mais achetez nous un serveur</h1>
-  <p class="pt-4">On a besoin d'argent ptn</p>
-  <a
-    class="mt-8 transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br">Espace
-    Je suis swag</a>
-</div>
-
-<footer class="footer p-10 bg-base-200 text-base-content">
-  <aside>
-    <svg class="w-20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136">
-      <path
-        d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
-        stroke="currentColor" stroke-width="8" />
-      <path d="M138 23H56m-16 0h-1" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
-      <path d="m89 132 34-90" stroke="currentColor" stroke-width="8" />
-    </svg>
-    <!-- p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p-->
-  </aside>
-  <nav>
-    <header class="footer-title">Services</header>
-    <a class="link link-hover">Branding</a>
-    <a class="link link-hover">Design</a>
-    <a class="link link-hover">Marketing</a>
-    <a class="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <header class="footer-title">Company</header>
-    <a class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
-    <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <header class="footer-title">Legal</header>
-    <a class="link link-hover">Terms of use</a>
-    <a class="link link-hover">Privacy policy</a>
-    <a class="link link-hover">Cookie policy</a>
-  </nav>
-</footer>
-
-<div class="drawer-side">
-  <label for="supertab" aria-label="close sidebar" class="drawer-overlay"></label>
-  <ul class= "menu p-4 w-80 min-h-full bg-base-200 text-base-content dropdown-content">
-    <!-- Sidebar content here -->
-    <li><a class="text-info hover:text-primary mt-14">🏠 Acceuil</a></li>
-    
-    <li>
-      <a>🛒 Nos Offres Jeux</a>
-      <ul class="p-2">
-        <li><a>Minecraft</a></li>
-        <li><a>FiveM</a></li>
-        <li><a>Garry's Mod</a></li>
-      </ul>
-    </li>
-    
-    <li>
-      <a>🌐 Nos Offres Web</a>
-      <ul class="p-2">
-        <li><a>Hébergement Web</a></li>
-        <li><a>VPS</a></li>
-        <li><a>Revendeur Web</a></li>
-      </ul>
-    </li>
-    
-    <li>
-      <a>🚨 Support</a>
-      <ul class="p-2">
-        <li><a>🎫 Ouvrir un Ticket</a></li>
-        <li><a>📞 Support Discord</a></li>
-        <li><a>📧 Contactez-Nous</a></li>
-      </ul>
-    </li>
-
-  </ul>
 </div>
 </div>
 </html>
