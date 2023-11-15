@@ -2,37 +2,21 @@
 <head>
     <link href="style.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
+    <link href="img/logo.png" rel="icon">
     <title>Diamond Heberg</title>
 </head>
 
 <!-- https://themewagon.github.io/ecohosting/ -->
+<div class="drawer">
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
 
 <div class="Poppins navbar bg-base-200">
   <div class="navbar-start">
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>🏠 Acceuil</a></li>
-        <li>
-          <a>🛒 Nos Offres Jeux</a>
-          <ul class="p-2">
-            <li><a>Minecraft</a></li>
-            <li><a>FiveM</a></li>
-            <li><a>Garry's Mod</a></li>
-          </ul>
-        </li>
-        <li>
-        <a>🚨 Support</a>
-          <ul class="p-2">
-            <li><a>🎫 Ouvrir un Ticket</a></li>
-            <li><a>📞 Support Discord</a></li>
-            <li><a>📧 Contactez-Nous</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </label>
+    
     <a class="btn p-1 ml-2 text-2xl font-extrabold">
     <svg class="w-10" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136">
         <path d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42" stroke="currentColor" stroke-width="8"/>
@@ -46,28 +30,32 @@
 
     <ul class="menu menu-horizontal px-1 mr-4">
       <li><a class="text-info hover:text-primary">🏠 Acceuil</a></li>
-      <li class="dropdown-hover" tabindex="0">
-        <details>
-          <summary class="hover:text-primary">🛒 Nos Offres Jeux</summary>
-          <ul class="p-2 bg-base-300">
-            <li><a>Minecraft</a></li>
-            <li><a>FiveM</a></li>
-            <li><a>Garry's Mod</a></li>
-          </ul>
-        </details>
+
+      <li class="dropdown dropdown-hover">
+        <label tabindex="0">🛒 Nos Offres Jeux</label>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Minecraft</a></li>
+          <li><a>FiveM</a></li>
+          <li><a>Garry's Mod</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown dropdown-hover">
+        <label tabindex="0">🌐 Nos Offres Web</label>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Hébergement Web</a></li>
+          <li><a>VPS</a></li>
+          <li><a>Revendeur Web</a></li>
+        </ul>
       </li>
       
-      <li class="dropdown-hover" tabindex="0">
-        <details>
-          <summary class="hover:text-primary">🚨 Support</summary>
-          <ul class="p-2 bg-base-300 w-48">
-            <li><a>🎫 Ouvrir un Ticket</a></li>
-            <li><a>📞 Support Discord</a></li>
-            <li><a class="pb-0">📧 Contactez-Nous</a></li>
-            <div class="divider py-0"></div>
-            <li><a class="pt-0">📜 Documents Légaux</a></li>
-          </ul>
-        </details>
+      <li class="dropdown dropdown-hover">
+        <label tabindex="0">🚨 Support</label>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>🎫 Ouvrir un Ticket</a></li>
+          <li><a>📞 Support Discord</a></li>
+          <li><a>📧 Contactez-Nous</a></li>
+        </ul>
       </li>
     </ul>
 
@@ -88,4 +76,95 @@
     </div>
 </div>
 
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center py-4 min-h-screen container mx-auto Poppins">
+<div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Site Lite</h2>
+    <div class="badge badge-primary">Offre là moin chère</div>
+    <p>We are using cookies for no reason.</p>
+    <div class="card-actions justify-end">
+      <a class="btn btn-ghost">Deny</a>
+    </div>
+  </div>
+</div>
+
+<div class="card w-96 bg-neutral text-neutral-content lg:h-5/6">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Stone</h2>
+    <div class="badge badge-warning">Offre recomandé</div>
+    <p>We are using cookies for no reason.</p>
+    <div class="card-actions justify-end">
+      <a class="btn btn-primary">Accept</a>
+    </div>
+  </div>
+</div>
+
+<div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Cookies!</h2>
+    <div class="badge badge-primary">Offre Sympa</div>
+    <p>We are using cookies for no reason.</p>
+    <div class="card-actions justify-end">
+      <a class="btn btn-ghost">Accept</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 place-items-center py-4">
+  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+    src="img/paypal.png"
+    alt="Logo Paypal">
+  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+    src="img/visa.webp"
+    alt="Logo Visa">
+  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+    src="img/mastercard.png"
+    alt="Logo MasterCard">
+  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+    src="img/paysafecardpng.png"
+    alt="Logo Paysafecard">
+  <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+    src="img/dedipass.png"
+    alt="Logo Dedipass">
+
+</div>
+</div>
+
+<div class="drawer-side">
+  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+  <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content dropdown-content">
+    <!-- Sidebar content here -->
+    <li><a class="text-info hover:text-primary">🏠 Acceuil</a></li>
+    
+    <li>
+      <a>🛒 Nos Offres Jeux</a>
+      <ul class="p-2">
+        <li><a>Minecraft</a></li>
+        <li><a>FiveM</a></li>
+        <li><a>Garry's Mod</a></li>
+      </ul>
+    </li>
+    
+    <li>
+      <a>🌐 Nos Offres Web</a>
+      <ul class="p-2">
+        <li><a>Hébergement Web</a></li>
+        <li><a>VPS</a></li>
+        <li><a>Revendeur Web</a></li>
+      </ul>
+    </li>
+    
+    <li>
+      <a>🚨 Support</a>
+      <ul class="p-2">
+        <li><a>🎫 Ouvrir un Ticket</a></li>
+        <li><a>📞 Support Discord</a></li>
+        <li><a>📧 Contactez-Nous</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+</div>
 </html>
