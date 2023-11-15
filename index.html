@@ -11,9 +11,9 @@
   <input id="my-drawer" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
 
-<div class="Poppins navbar bg-base-200">
+<div class="Poppins navbar fixed top-0 z-20 bg-base-200">
   <div class="navbar-start">
-    <label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost">
+    <label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost md:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
     </label>
     
@@ -64,9 +64,9 @@
   </div>
 </div>
 
-<div class="hero min-h-screen bg-base-100">
+<div class="hero bg-base-100" style="min-height: 80vh;">
     <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="img/server.svg" class="max-w-sm" />
+        <img src="img/server.svg" class="max-w-sm pt-8 md:pt-0" />
         <div>
             <h1 class="Poppins text-2xl md:text-4xl lg:text-6xl font-bold">L'hébergeur brillant comme le diamant</h1>
             <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
@@ -79,8 +79,9 @@
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center py-4 min-h-screen container mx-auto Poppins">
 <div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
   <div class="card-body items-center text-center">
+    <img src="img/icon/web.png" class="w-20 h-20">
     <h2 class="card-title">Site Lite</h2>
-    <div class="badge badge-primary">Offre là moin chère</div>
+    <div class="badge badge-primary">Offre la moin chère</div>
     <p>We are using cookies for no reason.</p>
     <div class="card-actions justify-end">
       <a class="btn btn-ghost">Deny</a>
@@ -90,7 +91,8 @@
 
 <div class="card w-96 bg-neutral text-neutral-content lg:h-5/6">
   <div class="card-body items-center text-center">
-    <h2 class="card-title">Stone</h2>
+    <img src="img/icon/iron.png" class="w-20 h-20 rounded">
+    <h2 class="card-title">Iron</h2>
     <div class="badge badge-warning">Offre recomandé</div>
     <p>We are using cookies for no reason.</p>
     <div class="card-actions justify-end">
@@ -101,9 +103,10 @@
 
 <div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
   <div class="card-body items-center text-center">
+    <img src="img/icon/js.png" class="w-20 h-20">
     <h2 class="card-title">Cookies!</h2>
     <div class="badge badge-primary">Offre Sympa</div>
-    <p>We are using cookies for no reason.</p>
+    <p>Je sais pas quoi mettre là.</p>
     <div class="card-actions justify-end">
       <a class="btn btn-ghost">Accept</a>
     </div>
@@ -111,7 +114,7 @@
 </div>
 </div>
 
-<div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 place-items-center py-4">
+<div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 place-items-center py-4 gap-y-8">
   <img class="h-16 w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
     src="img/paypal.png"
     alt="Logo Paypal">
@@ -133,9 +136,9 @@
 
 <div class="drawer-side">
   <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-  <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content dropdown-content">
+  <ul class="md:hidden menu p-4 w-80 min-h-full bg-base-200 text-base-content dropdown-content">
     <!-- Sidebar content here -->
-    <li><a class="text-info hover:text-primary">🏠 Acceuil</a></li>
+    <li><a class="text-info hover:text-primary mt-14">🏠 Acceuil</a></li>
     
     <li>
       <a>🛒 Nos Offres Jeux</a>
