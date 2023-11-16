@@ -108,44 +108,52 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center py-4 container mx-auto"  style="min-height: 75vh;">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center py-4 container mx-auto"  style="min-height: 66vh;">
 
       <div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
         <div class="card-body items-center text-center">
-          <img src="img/icon/web.png" class="w-20 h-20">
-          <h2 class="card-title">Site Lite</h2>
+          <img src="img/icon/web.png" class="w-20 h-20 -translate-y-20 absolute">
+          <h2 class="card-title pt-4">Site Lite</h2>
           <div class="badge badge-primary">Offre la moin chère</div>
-          <p>We are using cookies for no reason.</p>
+          <p>
+            <i class="fa-solid fa-floppy-disk"></i> 3Go <br>
+            <i class="fa-solid fa-database"></i> 2 Base de données <br>
+            <i class="fa-solid fa-table-columns"></i> 3 Sites<br>
+            <i class="fa-solid fa-at"></i> Comptes mails Illimités
+          </p>
+          <p class="font-bold">1,99 € / Mensuel</p>
           <div class="card-actions justify-end">
-            <a class="btn btn-ghost">Deny</a>
+            <a class="btn btn-ghost">Acheter</a>
           </div>
         </div>
       </div>
 
       <div class="card w-96 bg-neutral text-neutral-content lg:h-5/6">
         <div class="card-body items-center text-center">
-          <img src="img/icon/iron.png" class="w-20 h-20 rounded">
-          <h2 class="card-title text-2xl">Iron</h2>
+          <img src="img/icon/iron.png" class="w-20 h-20 rounded -translate-y-20 absolute">
+          <h2 class="card-title text-2xl pt-4">Iron</h2>
           <div class="badge badge-warning">Offre recomandé</div>
           <p class="py-2 text-lg">
-            <i class="fa-solid fa-microchip"></i> 200% CPU <br>
-            <i class="fa-solid fa-memory"></i> 4Go Ram <br>
-            <i class="fa-solid fa-floppy-disk"></i> 15Go <br>
+            <i class="fa-solid fa-microchip"></i> 4VCore CPU <br>
+            <i class="fa-solid fa-memory"></i> 8Go Ram <br>
+            <i class="fa-solid fa-floppy-disk"></i> 35Go <br>
             <i class="fa-solid fa-database"></i> 2 Base de données <br>
             <i class="fa-solid fa-cloud-arrow-down"></i> 1 Backup
           </p>
+          <p class="font-bold">4,99 € / Mensuel</p>
           <div class="card-actions justify-end">
-            <a class="btn btn-primary">Accept</a>
+            <a class="btn btn-primary">Acheter</a>
           </div>
         </div>
       </div>
 
       <div class="card w-96 bg-neutral text-neutral-content lg:h-4/6">
         <div class="card-body items-center text-center">
-          <img src="img/icon/js.png" class="w-20 h-20">
-          <h2 class="card-title">Cookies!</h2>
-          <div class="badge badge-primary">Offre Sympa</div>
-          <p>Je sais pas quoi mettre là.</p>
+          <img src="img/icon/js.png" class="w-20 h-20 -translate-y-20 absolute">
+          <h2 class="card-title pt-4">Offre Développeur</h2>
+          <div class="badge badge-primary">DEV+</div>
+          <p><i class="fa-solid fa-code"></i> Serveur Node.js, python, go...</p>
+          <p class="font-bold">4,99 € / Mensuel</p>
           <div class="card-actions justify-end">
             <a class="btn btn-ghost">Accept</a>
           </div>
@@ -157,31 +165,10 @@
     <div class="pt-20 bg-neutral">
       <h1 class="text-center font-bold text-4xl">Notre Equipe</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 place-items-center py-4 container mx-auto">
-
+      
       <div class="card w-96 px-10">
         <div class="card-body items-center text-center">
-          <img src="img/avatar/dragon-diamond.png" class="w-32 h-32 object-cover object-bottom rounded">
-          <h2 class="card-title">Olivier | 2VI_Dragon</h2>
-          <p><i class="fa-solid fa-square-envelope"></i> 2vi_dragon@diamond-heberg.fr</p>
-          <div><div class="badge badge-primary">Fondateur</div> <div class="badge badge-primary">Président</div></div>
-        </div>
-      </div>
-
-      <div class="card w-96 px-10">
-        <div class="card-body items-center text-center">
-          <img src="img/avatar/jeanmessiha.gif" class="w-32 h-32 object-cover object-bottom rounded">
-          <h2 class="card-title">Aaron | Lucifiss</h2>
-          <p><i class="fa-solid fa-square-envelope"></i> lucifiss@diamond-heberg.fr</p>
-          <div>
-            <div class="badge badge-primary">Sys. Admin</div>
-            <div class="badge badge-primary">Président</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card w-96 px-10">
-        <div class="card-body items-center text-center">
-          <img src="img/avatar/funa-diamond.png" class="w-32 h-32 object-cover object-bottom rounded">
+          <img src="img/avatar/funa-diamond.png" class="w-32 h-32 object-cover object-bottom rounded-lg">
           <h2 class="card-title">Fuansitien</h2>
           <p><i class="fa-solid fa-square-envelope"></i> funasitien@diamond-heberg.fr</p>
           <div>
@@ -193,8 +180,29 @@
 
       <div class="card w-96 px-10">
         <div class="card-body items-center text-center">
+          <img src="img/avatar/dragon-diamond.png" class="w-32 h-32 object-cover object-bottom rounded-lg">
+          <h2 class="card-title">Olivier | 2VI_Dragon</h2>
+          <p><i class="fa-solid fa-square-envelope"></i> 2vi_dragon@diamond-heberg.fr</p>
+          <div><div class="badge badge-primary">Fondateur</div> <div class="badge badge-primary">Président</div></div>
+        </div>
+      </div>
+
+      <div class="card w-96 px-10">
+        <div class="card-body items-center text-center">
+          <img src="img/avatar/jeanmessiha.gif" class="w-32 h-32 object-cover object-bottom rounded-lg">
+          <h2 class="card-title">Aaron | Lucifiss</h2>
+          <p><i class="fa-solid fa-square-envelope"></i> lucifiss@diamond-heberg.fr</p>
+          <div>
+            <div class="badge badge-primary">Sys. Admin</div>
+            <div class="badge badge-primary">Président</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-96 px-10">
+        <div class="card-body items-center text-center">
           <div class="avatar placeholder h-32">
-            <div class="bg-base-200 text-neutral-content rounded w-32">
+            <div class="bg-base-200 text-neutral-content rounded-lg w-32">
               <span class="text-3xl">N</span>
             </div>
           </div>
@@ -202,14 +210,14 @@
           <p><i class="fa-solid fa-square-envelope"></i> nehylae@diamond-heberg.fr</p>
           <div>
             <div class="badge badge-primary">Secrétaire</div>
-            <div class="badge badge-primary">Staff?</div>
+            <div class="badge badge-primary">Staff</div>
           </div>
         </div>
       </div>
 
       <div class="card w-96 px-10">
         <div class="card-body items-center text-center">
-          <img src="img/avatar/kyro-logo.png" class="w-32 h-32 object-cover object-bottom rounded">
+          <img src="img/avatar/kyro-logo.png" class="w-32 h-32 object-cover object-bottom rounded-lg">
           <h2 class="card-title">Kyromaru</h2>
           <p><i class="fa-solid fa-square-envelope"></i> kyromaru@diamond-heberg.fr</p>
           <div>
