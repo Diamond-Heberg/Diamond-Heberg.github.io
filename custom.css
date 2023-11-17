@@ -3,3 +3,16 @@
 .Poppins {
     font-family: 'Poppins', sans-serif;
 }
+
+stop {
+    transition: .4s ease;
+}
+
+/* Use the colors to transition to */
+.supersvg:hover stop:first-child {
+    stop-color: #22d3ee;
+}
+
+.supersvg:hover stop:last-child {
+    stop-color: #0891b2;
+}
