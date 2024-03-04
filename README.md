@@ -6,7 +6,7 @@
 
 ### **<ins><p>ℹ️ A propos du projet :</p>**
 
-Vous aimez le projet ? Laissez une étoile ⭐ sur le repo !
+C
 
 ---
 
@@ -23,8 +23,27 @@ Le code de ce site Web est sous la licence **Apache-2.0 license**. Cela signifie
 Nous vous laissons le choix entre:
 
 - Spécifié que votre site est créé à partir du template Diamond Heberg. Vous pouvez donc ajouter sur le footer quelque chose comme:
-  *Site créé à partir du template [Diamond Heberg](https://github.com/Diamond-Heberg/Diamond-Heberg.github.io/)*
-- 
+
+*Site créé à partir du template [Diamond Heberg](https://github.com/Diamond-Heberg/Diamond-Heberg.github.io/)*
+
+Avec le lien de cette page github
+
+- Ajouter **Funasitien** comme co-auteur du site. Autre exemple à mettre sur le footer:
+
+*Site original par [Funasitien](https://f.dreamclouds.fr)*
+
+Avec le lien de mon protfolio.
+Rien ne vous empêche de vous ajouter aux crédits ! Avec l'exemple précédent, vous pouvez très bien faire :
+
+*Site original par [Funasitien](https://f.dreamclouds.fr) modifié par [Benkuro11](https://github.com/benkuro11)*
+
+
+---
+
+### **<ins><p>🤔 Une Question ?</p>**
+Vous avez une question sur les copyright ? Vous souhaitez faire une commande ? *Ou nous signaler un site qui ne respecte pas notre licence* 😱 *?*
+
+**C'est juste ici ⬇️⬇️**
 
 <p align="center">
     <a href="https://discord.com/invite/jP5keq86g6">
