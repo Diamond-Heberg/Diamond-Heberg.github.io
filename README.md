@@ -6,11 +6,14 @@
 
 ### **<ins><p>ℹ️ A propos du projet :</p>**
 
-C
+J'ai coder ce site pour **Diamond Heberg** où je suis développeur.
 
 ---
 
 ### **<ins><p>📚 Fonctionnalitées :</p>**
+
+**📱 Compatibilité Mobile -** Un site 100% compatible sur les appareils mobiles
+**🎨 Themes -** Possibilité de changer de thème et de créé les vôtres avec le [créateur de thème DaisyUI](https://daisyui.com/theme-generator/)
 
 Vous aimez le projet ? Laissez une étoile ⭐ sur le repo !
 
