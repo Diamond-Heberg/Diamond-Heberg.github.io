@@ -1,236 +1,395 @@
 <html class="Poppins" data-theme="diamondblack">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style.css" rel="stylesheet">
-    <link href="../custom.css" rel="stylesheet">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet" />
+    <link href="../custom.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-    <link href="../img/badge.png" rel="icon">
+    <link href="../img/badge.png" rel="icon" />
     <title>Diamond Heberg</title>
 
     <!-- Primary Meta Tags -->
     <title>Diamond Heberg - L'hébergeur brillant comme le diamant</title>
     <meta name="title" content="Diamond Heberg - Offres Jeux" />
-    <meta name="description"
-      content="Envie de jouer avec vos amis sans y mettre votre bras ? Avec Diamond Heberg, trouvez des serveurs pour tout vos jeux en ligne à partir de 1,99€ !" />
-    
+    <meta
+      name="description"
+      content="Envie de jouer avec vos amis sans y mettre votre bras ? Avec Diamond Heberg, trouvez des serveurs pour tout vos jeux en ligne à partir de 1,99€ !"
+    />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://diamond-heberg.github.io/game" />
     <meta property="og:title" content="Diamond Heberg - Offres Jeux" />
-    <meta property="og:description"
-      content="Envie de jouer avec vos amis sans y mettre votre bras ? Avec Diamond Heberg, trouvez des serveurs pour tout vos jeux en ligne à partir de 1,99€ !" />
-    <meta property="og:image" content="https://diamond-heberg.github.io/img/badge.png" />
-    
+    <meta
+      property="og:description"
+      content="Envie de jouer avec vos amis sans y mettre votre bras ? Avec Diamond Heberg, trouvez des serveurs pour tout vos jeux en ligne à partir de 1,99€ !"
+    />
+    <meta
+      property="og:image"
+      content="https://diamond-heberg.github.io/img/badge.png"
+    />
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://diamond-heberg.github.io" />
-    <meta property="twitter:title" content="Diamond Heberg - L'hébergeur brillant comme le diamant" />
-    <meta property="twitter:description"
-      content="Découvrez Diamond Heberg, une platforme d'hébergement tout-en un qui peu héberger tout vos projets, et même encore plus !" />
-    <meta property="twitter:image" content="https://diamond-heberg.github.io/img/logo.png" />
+    <meta
+      property="twitter:title"
+      content="Diamond Heberg - L'hébergeur brillant comme le diamant"
+    />
+    <meta
+      property="twitter:description"
+      content="Découvrez Diamond Heberg, une platforme d'hébergement tout-en un qui peu héberger tout vos projets, et même encore plus !"
+    />
+    <meta
+      property="twitter:image"
+      content="https://diamond-heberg.github.io/img/logo.png"
+    />
+  </head>
 
-</head>
+  <div class="drawer">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
 
-
-<div class="drawer">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col">
-    <!-- Navbar -->
-
-    <nav class="navbar fixed top-0 z-20 bg-base-200">
-      <div class="navbar-start">
-        <div class="flex-none lg:hidden">
-          <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </label>
-        </div>
-        
-        <a class="btn p-1 ml-2 text-2xl font-extrabold">
-        <svg class="w-10" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136">
-            <path d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42" stroke="currentColor" stroke-width="8"/>
-            <path d="M138 23H56m-16 0h-1" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-            <path d="m89 132 34-90" stroke="currentColor" stroke-width="8"/>
-        </svg>
-            Diamond Heberg
-        </a>
-      </div>
-      <div class="navbar-end hidden lg:flex">
-
-        <ul class="menu menu-horizontal px-1 mr-2">
-          <li><a href="../">🏠 Accueil</a></li>
-
-          <li class="dropdown dropdown-hover">
-            <label tabindex="0" class="text-info hover:text-primary"><a href="">🛒 Nos Offres Jeux</a></label>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="minecraft">Minecraft</a></li>
-              <li><a href="fivem">FiveM</a></li>
-              <li><a href="garrysmod">Garry's Mod</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown dropdown-hover">
-            <label tabindex="0"><a href="../cloud">🌐 Nos Offres Cloud</a></label>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="../cloud/web">Hébergement Web</a></li>
-              <li><a href="../cloud/vps">VPS</a></li>
-              <li><a href="../cloud/reseller">Revendeur Web</a></li>
-            </ul>
-          </li>
-          
-          <li class="dropdown dropdown-hover">
-            <label tabindex="0">🚨 Support</label>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="https://manager.diamond-heberg.fr/client/support">🎫 Ouvrir un Ticket</a></li>
-              <li><a href="https://discord.com/invite/9HqYmuN4Fy">📞 Support Discord</a></li>
-              <li><a href="mailto:contact@diamond-heber.fr">📧 Contactez-Nous</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <a href="https://manager.diamond-heberg.fr" target="_blank" class="transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br">Espace Client</a>
-
-      </div>
-    </nav>
-
-    <div class="hero bg-base-100" style="min-height: 50vh;">
-        <div class="hero-content flex-col">
-            <div>
-                <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">Nos Offres Jeux</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="mx-4 lg:mx-12">
-
-      <div class="card my-6 lg:card-side bg-base-200 shadow-xl">
-        <figure><img class="lg:h-48 w-auto" src="../img/banner/minecraft.png" alt="Minecraft Banner" /></figure>
-        <div class="card-body">
-          <h2 class="card-title">Minecraft</h2>
-          <p>Le jeux de voxel le plus connus au monde.</p>
-          <div class="card-actions justify-end">
-            <a class="btn btn-primary" href="minecraft">Voir les offres</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card my-6 lg:card-side bg-base-200 shadow-xl">
-        <figure><img class="lg:h-48 w-auto" src="../img/banner/fivem.png" alt="Minecraft Banner" /></figure>
-        <div class="card-body">
-          <h2 class="card-title">FiveM</h2>
-          <p>Aussi appelé GTA 5.</p>
-          <div class="card-actions justify-end">
-            <a class="btn btn-primary" href="fivem">Voir les offres</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="card my-6 lg:card-side bg-base-200 shadow-xl">
-        <figure><img class="lg:h-48 w-auto" src="../img/banner/gmod.jpeg" alt="GMod Banner" /></figure>
-        <div class="card-body">
-          <h2 class="card-title">Garry's Mod</h2>
-          <p>Roblox mais vraiment pour les adultes.</p>
-          <div class="card-actions justify-end">
-            <a class="btn btn-primary" href="garrysmod">Voir les offres</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <footer class="mt-10 footer p-8 bg-base-200 text-base-content">
-      <aside class="">
-        <div class="w-20 hover:scale-105 duration-300">
-          <svg class="supersvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 136" enable-background="new 0 0 512 512"
-            xml:space="preserve">
-            <defs>
-              <linearGradient id="gradient" gradientUnits="userSpaceOnUse" fy="90%">
-                <stop offset="0" stop-color="oklch(var(--nc))" /> <!-- Colors to transition from -->
-                <stop offset="1" stop-color="oklch(var(--nc))" />
-              </linearGradient>
-              <mask id="clock-icon-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="256" height="256">
+      <nav class="navbar fixed top-0 z-20 bg-base-200">
+        <div class="navbar-start">
+          <div class="flex-none lg:hidden">
+            <label
+              for="my-drawer-3"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current"
+              >
                 <path
-                  d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
-                  stroke="white" stroke-width="8" />
-                <path d="M138 23H56m-16 0h-1" stroke="white" stroke-width="10" stroke-linecap="round" />
-                <path d="m89 132 34-90" stroke="white" stroke-width="8" />
-              </mask>
-            </defs>
-            <g mask="url(#clock-icon-mask)">
-              <rect x="0" y="0" width="512" height="512" fill="url(#gradient)" />
-            </g>
-          </svg>
-        </div>
-        <p></p>
-        <p class="p-2 font-extrabold text-2xl">DIAMOND HEBERG</p>
-        <p class="p-2 font-normal">Providing reliable tech since 1992</p>
-        
-      </aside>
-      <nav>
-        <header class="footer-title inline-block">Retrouvez nous sur</header>
-        <a class="link link-hover" href="https://discord.com/invite/9HqYmuN4Fy" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
-        <a class="link link-hover" href="https://twitter.com/DiamondHeberg" target="_blank"><i class="fa-brands fa-x-twitter"></i> X/Twitter</a>
-        <a class="link link-hover" href="https://instagram.com/diamondheberg" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        <a class="link link-hover" href="https://www.tiktok.com/@diamondheberg" target="_blank"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
-        <a class="link link-hover" href="https://youtube.com/@diamondheberg3236" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
-          
-      </nav>
-      <nav>
-        <header class="footer-title">Company</header>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <header class="footer-title">Legal</header>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
-      </nav>
-    </footer>
-  
-  </div>
-  <div class="drawer-side">
-    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-    <ul class="menu p-4 w-80 min-h-full bg-base-200 dropdown-content">
-      <!-- Sidebar content here -->
-      <li><a href="../" class="mt-14">🏠 Acceuil</a></li>
-      
-      <li>
-        <a class="text-info hover:text-primary">🛒 Nos Offres Jeux</a>
-        <ul class="p-2">
-          <li><a href="minecraft">Minecraft</a></li>
-          <li><a href="fivem">FiveM</a></li>
-          <li><a href="garrysmod">Garry's Mod</a></li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="../cloud">🌐 Nos Offres Cloud</a>
-        <ul class="p-2">
-          <li><a href="../cloud/web">Hébergement Web</a></li>
-          <li><a href="../cloud/vps">VPS</a></li>
-          <li><a href="../cloud/reseller">Revendeur Web</a></li>
-        </ul>
-      </li>
-      
-      <li>
-        <a>🚨 Support</a>
-        <ul class="p-2">
-          <li><a href="https://manager.diamond-heberg.fr/client/support">🎫 Ouvrir un Ticket</a></li>
-          <li><a href="https://discord.com/invite/9HqYmuN4Fy" target="_blank">📞 Support Discord</a></li>
-          <li><a href="mailto:contact@diamond-heberg.fr">📧 Contactez-Nous</a></li>
-        </ul>
-      </li>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
 
-    </ul>
+          <a class="btn p-1 ml-2 text-2xl font-extrabold">
+            <svg
+              class="w-10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 175 136"
+            >
+              <path
+                d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
+                stroke="currentColor"
+                stroke-width="8"
+              />
+              <path
+                d="M138 23H56m-16 0h-1"
+                stroke="currentColor"
+                stroke-width="10"
+                stroke-linecap="round"
+              />
+              <path d="m89 132 34-90" stroke="currentColor" stroke-width="8" />
+            </svg>
+            Diamond Heberg
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 mr-2">
+            <li><a href="../">🏠 Accueil</a></li>
+
+            <li class="dropdown dropdown-hover">
+              <label tabindex="0" class="text-info hover:text-primary"
+                ><a href="">🛒 Nos Offres Jeux</a></label
+              >
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="minecraft">Minecraft</a></li>
+                <li><a href="fivem">FiveM</a></li>
+                <li><a href="garrysmod">Garry's Mod</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-hover">
+              <label tabindex="0"
+                ><a href="../cloud">🌐 Nos Offres Cloud</a></label
+              >
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="../cloud/web">Hébergement Web</a></li>
+                <li><a href="../cloud/vps">VPS</a></li>
+                <li><a href="../cloud/reseller">Revendeur Web</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-hover">
+              <label tabindex="0">🚨 Support</label>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a href="https://manager.diamond-heberg.fr/client/support"
+                    >🎫 Ouvrir un Ticket</a
+                  >
+                </li>
+                <li>
+                  <a href="https://discord.com/invite/9HqYmuN4Fy"
+                    >📞 Support Discord</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:contact@diamond-heber.fr"
+                    >📧 Contactez-Nous</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a
+            href="https://manager.diamond-heberg.fr"
+            target="_blank"
+            class="transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br"
+            >Espace Client</a
+          >
+        </div>
+      </nav>
+
+      <div class="hero bg-base-100" style="min-height: 50vh;">
+        <div class="hero-content flex-col">
+          <div>
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">
+              Nos Offres Jeux
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-4 lg:mx-12">
+        <div class="card my-6 lg:card-side bg-base-200 shadow-xl">
+          <figure>
+            <img
+              class="lg:h-48 w-auto"
+              src="../img/banner/minecraft.png"
+              alt="Minecraft Banner"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Minecraft</h2>
+            <p>Le jeux de voxel le plus connus au monde.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary" href="minecraft">Voir les offres</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-6 lg:card-side bg-base-200 shadow-xl">
+          <figure>
+            <img
+              class="lg:h-48 w-auto"
+              src="../img/banner/fivem.png"
+              alt="Minecraft Banner"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">FiveM</h2>
+            <p>Aussi appelé GTA 5.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary" href="fivem">Voir les offres</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-6 lg:card-side bg-base-200 shadow-xl">
+          <figure>
+            <img
+              class="lg:h-48 w-auto"
+              src="../img/banner/gmod.jpeg"
+              alt="GMod Banner"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Garry's Mod</h2>
+            <p>Roblox mais vraiment pour les adultes.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary" href="garrysmod">Voir les offres</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-10 footer p-8 bg-base-200 text-base-content">
+        <aside class="">
+          <div class="w-20 hover:scale-105 duration-300">
+            <svg
+              class="supersvg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 175 136"
+              enable-background="new 0 0 512 512"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  gradientUnits="userSpaceOnUse"
+                  fy="90%"
+                >
+                  <stop offset="0" stop-color="oklch(var(--nc))" />
+                  <!-- Colors to transition from -->
+                  <stop offset="1" stop-color="oklch(var(--nc))" />
+                </linearGradient>
+                <mask
+                  id="clock-icon-mask"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="256"
+                  height="256"
+                >
+                  <path
+                    d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
+                    stroke="white"
+                    stroke-width="8"
+                  />
+                  <path
+                    d="M138 23H56m-16 0h-1"
+                    stroke="white"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                  <path d="m89 132 34-90" stroke="white" stroke-width="8" />
+                </mask>
+              </defs>
+              <g mask="url(#clock-icon-mask)">
+                <rect
+                  x="0"
+                  y="0"
+                  width="512"
+                  height="512"
+                  fill="url(#gradient)"
+                />
+              </g>
+            </svg>
+          </div>
+          <p></p>
+          <p class="p-2 font-extrabold text-2xl">DIAMOND HEBERG</p>
+          <p class="p-2 font-normal">L'hébergeur brillant comme le diamant</p>
+        </aside>
+        <nav>
+          <header class="footer-title inline-block">Retrouvez nous sur</header>
+          <a
+            class="link link-hover"
+            href="https://twitter.com/DiamondHeberg"
+            target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i> X/Twitter</a
+          >
+          <a
+            class="link link-hover"
+            href="https://instagram.com/diamondheberg"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          >
+          <a
+            class="link link-hover"
+            href="https://www.tiktok.com/@diamondheberg"
+            target="_blank"
+            ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+          >
+          <a
+            class="link link-hover"
+            href="https://youtube.com/@diamondheberg3236"
+            target="_blank"
+            ><i class="fa-brands fa-youtube"></i> Youtube</a
+          >
+        </nav>
+        <nav>
+          <header class="footer-title">Contacts</header>
+          <a class="link link-hover"
+            ><i class="fa-solid fa-phone"></i> +33 7 50 29 48 45</a
+          >
+          <a class="link link-hover"
+            ><i class="fa-solid fa-envelope"></i> contact@diamond-heberg.fr</a
+          >
+          <a
+            class="link link-hover"
+            href="https://discord.com/invite/9HqYmuN4Fy"
+            target="_blank"
+            ><i class="fa-brands fa-discord"></i> Discord</a
+          >
+        </nav>
+        <nav>
+          <header class="footer-title">Adresse</header>
+          <a class="link link-hover">51 Chemin des houx</a>
+          <a class="link link-hover">27500 Corneville-Sur-Risle,</a>
+          <a class="link link-hover">France</a>
+        </nav>
+      </footer>
+    </div>
+    <div class="drawer-side">
+      <label
+        for="my-drawer-3"
+        aria-label="close sidebar"
+        class="drawer-overlay"
+      ></label>
+      <ul class="menu p-4 w-80 min-h-full bg-base-200 dropdown-content">
+        <!-- Sidebar content here -->
+        <li><a href="../" class="mt-14">🏠 Acceuil</a></li>
+
+        <li>
+          <a class="text-info hover:text-primary">🛒 Nos Offres Jeux</a>
+          <ul class="p-2">
+            <li><a href="minecraft">Minecraft</a></li>
+            <li><a href="fivem">FiveM</a></li>
+            <li><a href="garrysmod">Garry's Mod</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="../cloud">🌐 Nos Offres Cloud</a>
+          <ul class="p-2">
+            <li><a href="../cloud/web">Hébergement Web</a></li>
+            <li><a href="../cloud/vps">VPS</a></li>
+            <li><a href="../cloud/reseller">Revendeur Web</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a>🚨 Support</a>
+          <ul class="p-2">
+            <li>
+              <a href="https://manager.diamond-heberg.fr/client/support"
+                >🎫 Ouvrir un Ticket</a
+              >
+            </li>
+            <li>
+              <a href="https://discord.com/invite/9HqYmuN4Fy" target="_blank"
+                >📞 Support Discord</a
+              >
+            </li>
+            <li>
+              <a href="mailto:contact@diamond-heberg.fr">📧 Contactez-Nous</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-</div>
 </html>
