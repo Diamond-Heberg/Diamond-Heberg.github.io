@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     "*.html",
-    "game/*.html",
-    "game/*/*.html",
-    "cloud/*.html",
-    "cloud/*/*.html",
+    "**/*.html",
+    "./cgv/index.html",
   ],
   theme: {
     extend: {},
@@ -39,5 +40,14 @@ module.exports = {
     ],
   },
   darkMode: ['class', '[data-theme="diamondblack"]'],
-  plugins: [require("daisyui")],
+  plugins: [
+    plugin(function({ addBase, theme }) {
+      addBase({
+        'h1': { fontSize: theme('fontSize.2xl', 'font.strong') },
+        'h2': { fontSize: theme('fontSize.xl') },
+        'h3': { fontSize: theme('fontSize.lg') },
+      })
+    }),
+    require("daisyui")
+  ],
 };
