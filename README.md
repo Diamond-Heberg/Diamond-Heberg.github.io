@@ -1,63 +1,54 @@
-<p align="center"><img src="https://diamond-heberg.fr/img/badge.png" alt="Logo"></p>
+# Astro Starter Kit: Basics
 
-<h1 align="center">Diamond Heberg</h1>
+```sh
+npm create astro@latest -- --template basics
+```
 
----
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-### **<ins><p>ℹ️ A propos du projet :</p>**
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-J'ai coder ce site pour **Diamond Heberg** où je suis développeur.
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
----
+## 🚀 Project Structure
 
-### **<ins><p>📚 Fonctionnalitées :</p>**
+Inside of your Astro project, you'll see the following folders and files:
 
-**📱 Compatibilité Mobile -** Un site 100% compatible sur les appareils mobiles
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-**🎨 Themes -** Possibilité de changer de thème et de créé les vôtres avec le [créateur de thème DaisyUI](https://daisyui.com/theme-generator/)
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Vous aimez le projet ? Laissez une étoile ⭐ sur le repo !
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
----
+Any static assets, like images, can be placed in the `public/` directory.
 
-### **<ins><p>🏛 Licence et Copyright :</p>**
+## 🧞 Commands
 
-Le code de ce site Web est sous la licence **Apache-2.0 license**. Cela signifie que vous pouvez modifier, repartager et même vendre un produit créé à partir de ce site sans autres conditions que de conserver cette licence et le copyright.
+All commands are run from the root of the project, from a terminal:
 
-**Nous vous laissons le choix entre:**
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-Spécifié que votre site est créé à partir du template Diamond Heberg. Vous pouvez donc ajouter sur le footer quelque chose comme:
+## 👀 Want to learn more?
 
-*Site créé à partir du template [Diamond Heberg](https://github.com/Diamond-Heberg/Diamond-Heberg.github.io/)*
-
-Avec le lien de cette page github
-
-### OU
-
-
-Ajouter **Funasitien** comme co-auteur du site. Autre exemple à mettre sur le footer:
-
-*Site original par [Funasitien](https://f.dreamclouds.fr)*
-
-Avec le lien de mon protfolio.
-Rien ne vous empêche de vous ajouter aux crédits ! Avec l'exemple précédent, vous pouvez très bien faire :
-
-*Site original par [Funasitien](https://f.dreamclouds.fr) modifié par [Benkuro11](https://github.com/benkuro11)*
-
-**Vous ne voulez pas nous créditer ?**
-Pour l'instant, vous ne pouvez pas acheter de licence, car vous pouriez nous - je vend de site webs. Il est donc plus logique de me passer commande. Si cela vous embête vraiment, **contacter moi sur discord**.
-
----
-
-### **<ins><p>🤔 Une Question ?</p>**
-Vous avez une question sur les copyright ? Vous souhaitez faire une commande ? *Ou nous signaler un site qui ne respecte pas notre licence* 😱 *?*
-
-**C'est juste ici ⬇️⬇️**
-
-<p align="center">
-    <a href="https://discord.com/invite/jP5keq86g6">
-        <img src="https://invidget.switchblade.xyz/jP5keq86g6">
-    </a>
-</p>
-
----
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
