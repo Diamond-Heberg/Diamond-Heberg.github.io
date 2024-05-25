@@ -1,51 +1,66 @@
 ---
-interface Props {
-	title: string;
-}
-
 const { title } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html class="Poppins" data-theme="diamondblack">
+  <head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link href="img/badge.png" rel="icon" />
+    <title>{title}</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Diamond Heberg - L'hébergeur brillant comme le diamant</title>
+    <meta
+      name="title"
+      content="Diamond Heberg - L'hébergeur brillant comme le diamant"
+    />
+    <meta
+      name="description"
+      content="Découvrez Diamond Heberg, une platforme d'hébergement tout-en un qui peu héberger tout vos projets, et même encore plus !"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://diamond-heberg.github.io" />
+    <meta
+      property="og:title"
+      content="Diamond Heberg - L'hébergeur brillant comme le diamant"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez Diamond Heberg, une platforme d'hébergement tout-en un qui peu héberger tout vos projets, et même encore plus !"
+    />
+    <meta
+      property="og:image"
+      content="https://diamond-heberg.github.io/img/logo.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://diamond-heberg.github.io" />
+    <meta
+      property="twitter:title"
+      content="Diamond Heberg - L'hébergeur brillant comme le diamant"
+    />
+    <meta
+      property="twitter:description"
+      content="Découvrez Diamond Heberg, une platforme d'hébergement tout-en un qui peu héberger tout vos projets, et même encore plus !"
+    />
+    <meta
+      property="twitter:image"
+      content="https://diamond-heberg.github.io/img/logo.png"
+    />
+  </head>
+
+  <slot />
+
+
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
