@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin', '@tailwindcss/typography')
 
 module.exports = {
   content: [
     "*.html",
     "**/*.html",
     "./cgv/index.html",
+    "./cgu/index.html",
   ],
   theme: {
     extend: {},
@@ -43,7 +44,7 @@ module.exports = {
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
-        'h1': { fontSize: theme('fontSize.2xl', 'font.strong') },
+        'h1': { fontSize: theme('fontSize.2xl') },
         'h2': { fontSize: theme('fontSize.xl') },
         'h3': { fontSize: theme('fontSize.lg') },
       })

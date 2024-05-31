@@ -1,0 +1,759 @@
+<html class="Poppins" data-theme="diamondblack">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../style.css" rel="stylesheet" />
+  <link href="../custom.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+  <link href="../img/badge.png" rel="icon" />
+  <title>Diamond Heberg</title>
+
+  <!-- Primary Meta Tags -->
+  <title>Diamond Heberg - L'hébergeur brillant comme le diamant</title>
+  <meta name="title" content="Diamond Heberg - Offres Jeux" />
+  <meta
+    name="description"
+    content="Envie de jouer avec vos amis sans y mettre votre bras ? Avec Diamond Heberg, trouvez des serveurs pour tout vos jeux en ligne à partir de 1,99€ !"
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://diamond-heberg.github.io/game" />
+  <meta property="og:title" content="Diamond Heberg - Offres Jeux" />
+  <meta
+    property="og:description"
+    content="Envie de jouer avec vos amis sans y mettre votre bras ? Avec Diamond Heberg, trouvez des serveurs pour tout vos jeux en ligne à partir de 1,99€ !"
+  />
+  <meta
+    property="og:image"
+    content="https://diamond-heberg.github.io/img/badge.png"
+  />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://diamond-heberg.github.io" />
+  <meta
+    property="twitter:title"
+    content="Diamond Heberg - L'hébergeur brillant comme le diamant"
+  />
+  <meta
+    property="twitter:description"
+    content="Découvrez Diamond Heberg, une platforme d'hébergement tout-en un qui peu héberger tout vos projets, et même encore plus !"
+  />
+  <meta
+    property="twitter:image"
+    content="https://diamond-heberg.github.io/img/logo.png"
+  />
+</head>
+
+<div class="drawer">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+    <!-- Navbar -->
+
+        <nav class="navbar fixed top-0 z-20 bg-base-200">
+        <div class="navbar-start">
+            <div class="flex-none lg:hidden">
+            <label
+                for="my-drawer-3"
+                aria-label="open sidebar"
+                class="btn btn-square btn-ghost"
+            >
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current"
+                >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+                </svg>
+            </label>
+            </div>
+
+            <button
+            class="btn p-1 ml-2 text-2xl font-extrabold"
+            data-toggle-theme="diamondblack,diamondwhite"
+            data-act-class="diamondblack"
+            >
+            <svg
+                class="w-10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 175 136"
+            >
+                <path
+                d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
+                stroke="currentColor"
+                stroke-width="8"
+                />
+                <path
+                d="M138 23H56m-16 0h-1"
+                stroke="currentColor"
+                stroke-width="10"
+                stroke-linecap="round"
+                />
+                <path d="m89 132 34-90" stroke="currentColor" stroke-width="8" />
+            </svg>
+            Diamond Heberg
+            </button>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 mr-2">
+            <li><a href="../">🏠 Accueil</a></li>
+
+            <li class="dropdown dropdown-hover">
+                <label tabindex="0" class="text-info hover:text-primary"
+                ><a href="">🛒 Nos Offres Jeux</a></label
+                >
+                <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                <li><a href="minecraft">Minecraft</a></li>
+                <li><a href="fivem">FiveM</a></li>
+                <li><a href="garrysmod">Garry's Mod</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown dropdown-hover">
+                <label tabindex="0"
+                ><a href="../cloud">🌐 Nos Offres Cloud</a></label
+                >
+                <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                <li><a href="../cloud/web">Hébergement Web</a></li>
+                <li><a href="../cloud/vps">VPS</a></li>
+                <li><a href="../cloud/reseller">Revendeur Web</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown dropdown-hover">
+                <label tabindex="0">🚨 Support</label>
+                <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                <li>
+                    <a href="https://manager.diamond-heberg.fr/client/support"
+                    >🎫 Ouvrir un Ticket</a
+                    >
+                </li>
+                <li>
+                    <a href="https://discord.com/invite/9HqYmuN4Fy"
+                    >📞 Support Discord</a
+                    >
+                </li>
+                <li>
+                    <a href="mailto:contact@diamond-heber.fr">📧 Contactez-Nous</a>
+                </li>
+                </ul>
+            </li>
+            </ul>
+
+            <a
+            href="https://manager.diamond-heberg.fr"
+            target="_blank"
+            class="transition-colors hover:scale-105 ease-in-out duration-300 mx-4 btn text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br"
+            >Espace Client</a
+            >
+        </div>
+        </nav>
+
+    <!--                  CONTENU                      -->
+    <article class="prose lg:prose-xl mt-20 mx-4 lg:mx-8">
+        <p style="text-align: center;">
+        <strong>Conditions générales d'utilisation&nbsp;</strong>
+        </p>
+        <p style="text-align: center;">
+        <strong>du site Diamond-Heberg.fr</strong>
+        </p>
+        <p style="text-align: justify;">
+        <strong>Préambule&nbsp;</strong>
+        </p>
+        <p style="text-align: justify;">
+        Les présentes conditions générales d'utilisation sont conclues entre
+        :&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - le gérant du site internet, ci-après désigné « l’Éditeur »,&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - toute personne souhaitant accéder au site et à ses services, ci-après
+        appelé « l’Utilisateur »
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 1 - Principes</strong>
+        </p>
+        <p style="text-align: justify;">
+        &nbsp;Les présentes conditions générales d'utilisation ont pour objet
+        l'encadrement juridique de l’utilisation du site
+        <a target="_blank" href="https://diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);">Diamond-Heberg.fr</span>
+        </a>
+        et de ses services.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Le site Internet
+        <a target="_blank" href="https://diamond-heberg.fr/">
+            <span style="color: rgb(17, 85, 204);">https://diamond-heberg.fr/</span>
+        </a>
+        est un service de :&nbsp;
+        </p>
+        <ul>
+        <li>L’association Diamond-Heberg</li>
+        <li>
+            située Avenue de Versailles
+            <span style="text-decoration: underline;">76380 Canteleu</span>,
+            France&nbsp;
+        </li>
+        <li>
+            adresse URL du site :
+            <a target="_blank" href="https://diamond-heberg.fr/">
+            <span style="color: rgb(17, 85, 204);"
+                >https://diamond-heberg.fr/&nbsp;</span
+            >
+            </a>
+        </li>
+        <li>
+            e-mail :
+            <a target="_blank" href="mailto:contact@diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);"
+                >contact@diamond-heberg.fr</span
+            >
+            </a>
+        </li>
+        <li>numéro de téléphone : 07 50 29 48 45&nbsp;</li>
+        </ul>
+        <p style="text-align: justify;">
+        Les conditions générales d'utilisation doivent être acceptées par tout
+        Utilisateur, et son accès au site vaut acceptation de ces conditions.
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 2 - Evolution et durée des CGU</strong>
+        </p>
+        <p style="text-align: justify;">
+        Les présentes conditions générales d'utilisation sont conclues pour une
+        durée indéterminée. Le contrat produit ses effets à l'égard de
+        l'Utilisateur à compter du début de l’utilisation du service. Le site
+        <a target="_blank" href="https://diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);">Diamond-Heberg.fr</span>
+        </a>
+        se réserve le droit de modifier les clauses de ces conditions générales
+        d’utilisation à tout moment et sans justification.
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 3 - Accès au site&nbsp;</strong>
+        </p>
+        <p style="text-align: justify;">
+        Tout Utilisateur ayant accès à internet peut accéder gratuitement et
+        depuis n’importe où au site
+        <a target="_blank" href="http://diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);">Diamond-Heberg.fr</span> </a
+        >. Les frais supportés par l’Utilisateur pour y accéder (connexion
+        internet, matériel informatique, etc.) ne sont pas à la charge de l’
+        Éditeur.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Le site et ses différents services peuvent être interrompus ou suspendus
+        par l’Éditeur, notamment à l’occasion d’une maintenance, sans obligation
+        de préavis ou de justification.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        L'Utilisateur du site a accès aux services suivants : hébergement
+        informatique.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Le site comprend un espace membre payant réservé aux utilisateurs
+        inscrits. Ces utilisateurs pourront y accéder en utilisant leurs
+        identifiants de connexion.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Les services réservés aux membres sont les suivants : Panel de gestion.
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 4 - Responsabilités&nbsp;</strong>
+        </p>
+        <p style="text-align: justify;">
+        La responsabilité de l'Éditeur ne peut être engagée en cas de défaillance,
+        panne, difficulté ou interruption de fonctionnement, empêchant l'accès au
+        site ou à une de ses fonctionnalités.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Le matériel de connexion au site utilisée est sous l'entière
+        responsabilité de l'Utilisateur qui doit prendre toutes les mesures
+        appropriées pour protéger le matériel et les données notamment d'attaques
+        virales par Internet. L'utilisateur est par ailleurs le seul responsable
+        des sites et données qu'il consulte.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        L'Éditeur ne pourra être tenu responsable en cas de poursuites judiciaires
+        à l'encontre de l'Utilisateur :&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - du fait de l'usage du site ou de tout service accessible via Internet
+        ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - du fait du non-respect par l'Utilisateur des présentes conditions
+        générales.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        L'Éditeur n'est pas responsable des dommages causés à l'Utilisateur, à des
+        tiers et/ou à l'équipement de l'Utilisateur du fait de sa connexion ou de
+        son utilisation du site et l'Utilisateur renonce à toute action contre
+        l'Éditeur de ce fait. Si l'Éditeur venait à faire l'objet d'une procédure
+        amiable ou judiciaire à raison de l'utilisation du site par l'Utilisateur,
+        il pourra retourner contre lui pour obtenir indemnisation de tous les
+        préjudices, sommes, condamnations et frais qui pourraient découler de
+        cette procédure.
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 5 - Propriété intellectuelle&nbsp;</strong>
+        </p>
+        <p style="text-align: justify;">
+        Tous les documents techniques, produits, photographies, textes, logos,
+        dessins, vidéos, etc., sont soumis à des droits d'auteur Tous les
+        documents techniques, produits, photographies, textes, logos, dessins,
+        vidéos, etc., sont soumis à des droits d'auteur et sont protégés par le
+        Code de la propriété intellectuelle. Lorsqu'ils sont remis à nos clients,
+        ils demeurent la propriété exclusive de
+        <a target="_blank" href="https://diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);">Diamond-Heberg.fr</span> </a
+        >, seul titulaire des droits de propriété intellectuelle sur ces
+        documents, qui doivent lui être rendus à sa demande.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Nos clients s'engagent à ne faire aucun usage de ces documents,
+        susceptible de porter atteinte aux droits de propriété industrielle ou
+        intellectuelle du fournisseur et s'engagent à ne les divulguer à aucun
+        tiers, en dehors d'une autorisation expresse et préalable donnée par
+        l'Editeur.
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 6 - Liens hypertextes&nbsp;</strong>
+        </p>
+        <p style="text-align: justify;">
+        La mise en place par l'Utilisateur de tous liens hypertextes vers tout ou
+        partie du site est strictement interdite, sauf autorisation préalable et
+        écrite de l'Éditeur, sollicitée par courriel à l'adresse suivante :
+        <a target="_blank" href="mailto:contact@diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);"
+            >contact@diamond-heberg.fr</span
+            > </a
+        >. L'Éditeur est libre de refuser cette autorisation sans avoir à
+        justifier de quelque manière que ce soit sa décision. Dans le cas où
+        l'Éditeur accorderait son autorisation, celle-ci n'est dans tous les cas
+        que temporaire et pourra être retirée à tout moment, sans obligation de
+        justification à la charge de l'Éditeur. Dans tous les cas, tout lien devra
+        être retiré sur simple demande de l'Éditeur. Toute information accessible
+        via un lien vers d'autres sites n'est pas sous le contrôle de l'Éditeur
+        qui décline toute responsabilité quant à leur contenu.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 7 - Protection des données personnelles&nbsp;</strong>
+        </p>
+        <p style="text-align: justify;">
+        <span style="text-decoration: underline;">
+            <strong>Données collectées&nbsp;</strong>
+        </span>
+        </p>
+        <p style="text-align: justify;">
+        Les données à caractère personnel qui sont collectées sur ce site sont les
+        suivantes :&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - ouverture de compte : lors de la création du compte de l'utilisateur :
+        nom ; prénom ; adresse électronique ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - connexion : lors de la connexion de l'utilisateur au site web, celui-ci
+        enregistre, notamment, ses nom, prénom, données de connexion,
+        d'utilisation, de localisation et ses données relatives au paiement
+        ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - profil : l'utilisation des prestations prévues sur le site web permet de
+        renseigner un profil, pouvant comprendre une adresse et un numéro de
+        téléphone ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - paiement : dans le cadre du paiement des produits et prestations
+        proposés sur le site web, celui-ci enregistre des données financières
+        relatives au compte bancaire ou à la carte de crédit de l'utilisateur
+        ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - communication : lorsque le site web est utilisé pour communiquer avec
+        d'autres membres, les données concernant les communications de
+        l'utilisateur font l'objet d'une conservation temporaire ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - cookies : les cookies sont utilisés, dans le cadre de l'utilisation du
+        site. L'utilisateur a la possibilité de désactiver les cookies à partir
+        des paramètres de son navigateur.
+        </p>
+        <p style="text-align: justify;">
+        Utilisation des données personnelles&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        Les données personnelles collectées auprès des utilisateurs ont pour
+        objectif la mise à disposition des services du site web, leur amélioration
+        et le maintien d'un environnement sécurisé. Plus précisément, les
+        utilisations sont les suivantes :&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - accès et utilisation du site web par l'utilisateur ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - gestion du fonctionnement et optimisation du site web ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - organisation des conditions d'utilisation des Services de paiement
+        ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - vérification, identification et authentification des données transmises
+        par l'utilisateur ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - proposition à l'utilisateur de la possibilité de communiquer avec
+        d'autres utilisateurs du site web ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - mise en oeuvre d'une assistance utilisateurs ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - personnalisation des services en affichant des publicités en fonction de
+        l'historique de navigation de l'utilisateur, selon ses préférences ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - prévention et détection des fraudes, malwares (malicious softwares ou
+        logiciels malveillants) et gestion des incidents de sécurité ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - gestion des éventuels litiges avec les utilisateurs ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - envoi d'informations commerciales et publicitaires, en fonction des
+        préférences de l'utilisateur.
+        </p>
+        <p style="text-align: justify;">
+        <span style="text-decoration: underline;">
+            <strong>Partage des données personnelles avec des tiers&nbsp;</strong>
+        </span>
+        </p>
+        <p style="text-align: justify;">
+        Les données personnelles peuvent être partagées avec des sociétés tierces,
+        dans les cas suivants :&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - lorsque l'Utilisateur utilise les services de paiement, pour la mise en
+        oeuvre de ces services, le site web est en relation avec des sociétés
+        bancaires et financières tierces avec lesquelles elle a passé des contrats
+        ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - lorsque l'Utilisateur publie, dans les zones de commentaires libres du
+        site web, des informations accessibles au public ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - lorsque l'Utilisateur autorise le site web d'un tiers à accéder à ses
+        données ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - lorsque le site web recourt aux services de prestataires pour fournir
+        l'assistance utilisateurs, la publicité et les services de paiement. Ces
+        prestataires disposent d'un accès limité aux données de l'utilisateur,
+        dans le cadre de l'exécution de ces prestations, et ont une obligation
+        contractuelle de les utiliser en conformité avec les dispositions de la
+        réglementation applicable en matière protection des données à caractère
+        personnel ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - si la loi l'exige, le site web peut effectuer la transmission de données
+        pour donner suite aux réclamations présentées contre le site web et se
+        conformer aux procédures administratives et judiciaires ;&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        - si le site web est impliquée dans une opération de fusion, acquisition,
+        cession d'actifs ou procédure de redressement judiciaire, elle pourra être
+        amenée à céder ou partager tout ou partie de ses actifs, y compris les
+        données à caractère personnel. Dans ce cas, les utilisateurs seraient
+        informés, avant que les données à caractère personnel ne soient
+        transférées à une tierce partie.
+        </p>
+        <p style="text-align: justify;">
+        <span style="text-decoration: underline;">
+            <strong>Sécurité et confidentialité&nbsp;</strong>
+        </span>
+        </p>
+        <p style="text-align: justify;">
+        Le site web met en oeuvre des mesures organisationnelles, techniques,
+        logicielles et physiques en matière de sécurité du numérique pour protéger
+        les données personnelles contre les altérations, destructions et accès non
+        autorisés. Toutefois, il est à signaler qu'internet n'est pas un
+        environnement complètement sécurisé et le site web ne peut pas garantir la
+        sécurité de la transmission ou du stockage des informations sur internet.
+        </p>
+        <p style="text-align: justify;">
+        <span style="text-decoration: underline;">
+            <strong>Mise en oeuvre des droits des utilisateurs</strong>
+        </span>
+        </p>
+        <p style="text-align: justify;">
+        &nbsp;En application de la réglementation applicable aux données à
+        caractère personnel, les utilisateurs disposent des droits suivants,
+        qu'ils peuvent exercer en faisant leur demande à l'adresse suivante :
+        <a target="_blank" href="mailto:contact@diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);">contact@diamond-heberg.fr</span>
+        </a>
+        </p>
+        <p style="text-align: justify;">
+        le droit d’accès : ils peuvent exercer leur droit d'accès, pour connaître
+        les données personnelles les concernant. Dans ce cas, avant la mise en
+        œuvre de ce droit, le site web peut demander une preuve de l'identité de
+        l'utilisateur afin d'en vérifier l'exactitude.&nbsp;
+        </p>
+        <ul>
+        <li>
+            le droit de rectification : si les données à caractère personnel
+            détenues par le site web sont inexactes, ils peuvent demander la mise à
+            jour des informations.&nbsp;
+        </li>
+        <li>
+            le droit de suppression des données : les utilisateurs peuvent demander
+            la suppression de leurs données à caractère personnel, conformément aux
+            lois applicables en matière de protection des données.&nbsp;
+        </li>
+        <li>
+            le droit à la limitation du traitement : les utilisateurs peuvent de
+            demander au site web de limiter le traitement des données personnelles
+            conformément aux hypothèses prévues par le RGPD.&nbsp;
+        </li>
+        <li>
+            le droit de s’opposer au traitement des données : les utilisateurs
+            peuvent s’opposer à ce que ses données soient traitées conformément aux
+            hypothèses prévues par le RGPD.&nbsp;
+        </li>
+        <li>
+            le droit à la portabilité : ils peuvent réclamer que le site web leur
+            remette les données personnelles qui lui sont fournies pour les
+            transmettre à un nouveau site web.
+        </li>
+        </ul>
+        <p style="text-align: justify;">
+        <span style="text-decoration: underline;">
+            <strong>Evolution de la présente clause</strong>
+        </span>
+        </p>
+        <p style="text-align: justify;">
+        Le site web se réserve le droit d'apporter toute modification à la
+        présente clause relative à la protection des données à caractère personnel
+        à tout moment. Si une modification est apportée à la présente clause de
+        protection des données à caractère personnel, le site web s'engage à
+        publier la nouvelle version sur son site. Le site web informera également
+        les utilisateurs de la modification par messagerie électronique, dans un
+        délai minimum de 15 jours avant la date d'effet. Si l'utilisateur n'est
+        pas d'accord avec les termes de la nouvelle rédaction de la clause de
+        protection des données à caractère personnel, il a la possibilité de
+        supprimer son compte.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 8 - Cookies</strong>
+        </p>
+        <p style="text-align: justify;">
+        Le site
+        <a target="_blank" href="http://diamond-heberg.fr">
+            <span style="color: rgb(17, 85, 204);">Diamond-Heberg.fr</span>
+        </a>
+        peut collecter automatiquement des informations standards. Toutes les
+        informations collectées indirectement ne seront utilisées que pour suivre
+        le volume, le type et la configuration du trafic utilisant ce site, pour
+        en développer la conception et l'agencement et à d'autres fins
+        administratives et de planification et plus généralement pour améliorer le
+        service que nous vous offrons.&nbsp;
+        </p>
+        <p style="text-align: justify;">
+        <strong>Article 9 - Loi applicable</strong>
+        </p>
+        <p style="text-align: justify;">
+        Les présentes conditions générales d'utilisation sont soumises à
+        l'application du droit français. Si les parties n'arrivent pas à résoudre
+        un litige à l'amiable, le litige sera soumis à la compétence des tribunaux
+        français.
+        </p>
+        </article>
+
+        <footer class="mt-10 footer p-8 bg-base-200 text-base-content">
+            <aside class="">
+            <div class="w-20 hover:scale-105 duration-300">
+                <svg
+                class="supersvg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 175 136"
+                enable-background="new 0 0 512 512"
+                xml:space="preserve"
+                >
+                <defs>
+                    <linearGradient
+                    id="gradient"
+                    gradientUnits="userSpaceOnUse"
+                    fy="90%"
+                    >
+                    <stop offset="0" stop-color="oklch(var(--nc))" />
+                    <!-- Colors to transition from -->
+                    <stop offset="1" stop-color="oklch(var(--nc))" />
+                    </linearGradient>
+                    <mask
+                    id="clock-icon-mask"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="256"
+                    height="256"
+                    >
+                    <path
+                        d="M2 42h170M7 49l73 79c4 4 10 4 14 0l73-79c4-4 4-9 1-13L147 8c-1-2-4-4-8-4H35c-3 0-6 2-8 4L7 36c-3 4-3 9 0 13Zm78 81L51 42"
+                        stroke="white"
+                        stroke-width="8"
+                    />
+                    <path
+                        d="M138 23H56m-16 0h-1"
+                        stroke="white"
+                        stroke-width="10"
+                        stroke-linecap="round"
+                    />
+                    <path d="m89 132 34-90" stroke="white" stroke-width="8" />
+                    </mask>
+                </defs>
+                <g mask="url(#clock-icon-mask)">
+                    <rect
+                    x="0"
+                    y="0"
+                    width="512"
+                    height="512"
+                    fill="url(#gradient)"
+                    />
+                </g>
+                </svg>
+            </div>
+            <p></p>
+            <p class="p-2 font-extrabold text-2xl">DIAMOND HEBERG</p>
+            <p class="p-2 font-normal">L'hébergeur brillant comme le diamant</p>
+            </aside>
+            <nav>
+            <header class="footer-title inline-block">Retrouvez nous sur</header>
+            <a
+                class="link link-hover"
+                href="https://twitter.com/DiamondHeberg"
+                target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i> X/Twitter</a
+            >
+            <a
+                class="link link-hover"
+                href="https://instagram.com/diamondheberg"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+            >
+            <a
+                class="link link-hover"
+                href="https://www.tiktok.com/@diamondheberg"
+                target="_blank"
+                ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+            >
+            <a
+                class="link link-hover"
+                href="https://youtube.com/@diamondheberg3236"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i> Youtube</a
+            >
+            </nav>
+            <nav>
+            <header class="footer-title">Contacts</header>
+            <a class="link link-hover"
+                ><i class="fa-solid fa-phone"></i> +33 7 50 29 48 45</a
+            >
+            <a class="link link-hover"
+                ><i class="fa-solid fa-envelope"></i> contact@diamond-heberg.fr</a
+            >
+            <a
+                class="link link-hover"
+                href="https://discord.com/invite/9HqYmuN4Fy"
+                target="_blank"
+                ><i class="fa-brands fa-discord"></i> Discord</a
+            >
+            </nav>
+            <nav>
+            <header class="footer-title">Adresse</header>
+            <a class="link link-hover">Avenue de Versailles</a>
+            <a class="link link-hover">76380 Canteleu,</a>
+            <a class="link link-hover">France</a>
+            <span class="mt-6">
+                <a class="footer-title" href="/cgu">CGU</a>
+                /
+                <a class="footer-title" href="/cgv">CGV</a>
+            </span>
+            </nav>
+        </footer>
+    </div>
+    <div class="drawer-side">
+      <label
+        for="my-drawer-3"
+        aria-label="close sidebar"
+        class="drawer-overlay"
+      ></label>
+      <ul class="menu p-4 w-80 min-h-full bg-base-200 dropdown-content">
+        <!-- Sidebar content here -->
+        <li><a href="../../" class="mt-14">🏠 Acceuil</a></li>
+
+        <li>
+          <a href="../">🛒 Nos Offres Jeux</a>
+          <ul class="p-2">
+            <li><a class="text-info hover:text-primary">Minecraft</a></li>
+            <li><a href="../fivem">FiveM</a></li>
+            <li><a href="../garrysmod">Garry's Mod</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="../../cloud">🌐 Nos Offres Cloud</a>
+          <ul class="p-2">
+            <li><a href="../../cloud/web">Hébergement Web</a></li>
+            <li><a href="../../cloud/vps">VPS</a></li>
+            <li><a href="../../cloud/reseller">Revendeur Web</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a>🚨 Support</a>
+          <ul class="p-2">
+            <li>
+              <a href="https://manager.diamond-heberg.fr/client/support"
+                >🎫 Ouvrir un Ticket</a
+              >
+            </li>
+            <li>
+              <a href="https://discord.com/invite/9HqYmuN4Fy" target="_blank"
+                >📞 Support Discord</a
+              >
+            </li>
+            <li>
+              <a href="mailto:contact@diamond-heberg.fr">📧 Contactez-Nous</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</html>
+
