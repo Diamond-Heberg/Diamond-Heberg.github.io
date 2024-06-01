@@ -49,6 +49,7 @@ module.exports = {
         'h3': { fontSize: theme('fontSize.lg') },
       })
     }),
+    require("@tailwindcss/typography"),
     require("daisyui")
   ],
 };
